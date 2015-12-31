@@ -15,6 +15,16 @@ def about():
 def market():
 	page = "market"
 	return render_template("index.html", page = page)
+	
+@app.route("/papernet/features")
+def features():
+	page = "features"
+	return render_template("index.html", page = page)
+	
+@app.route("/papernet/contact")
+def contact():
+	page = "contact"
+	return render_template("index.html, page = page")
 
 if __name__== '__main__':
 	app.run(host = 'localhost', port = 3000, debug = True)

@@ -2,41 +2,104 @@
 {% block content %}
 
 {% if page == "home" %}
-<h1> The Papernet of Things</h1>
-<img src = "/static/photos/PapernetOfThings.png"><br>
-The Papernet of Things repurposes used pizza boxes to create reusable iPhone cases! This is a Chemical Engineering senior design project for ChE 488/489: Product Design. The Papernet of Things is founded by Tsatsrel Battsengel, Angela Hu, Matthew Riley, Douglas Watts and Alyssa Woo.
+	<h1> The Papernet of Things</h1>
+	<img src = "/static/photos/PapernetOfThings.png"><br>
+	The Papernet of Things repurposes used pizza boxes to create reusable iPhone cases! This is a Chemical Engineering senior design project for ChE 488/489: Product Design. The Papernet of Things is founded by Tsatsrel Battsengel, Angela Hu, Matthew Riley, Douglas Watts and Alyssa Woo.
 
 {% elif page == "about" %}
-<h1> The Papernet of Things: About</h1>
-<img src = "/static/photos/PapernetOfThings.png" height = 200 width = 200><br>
-<h3>Our Mission</h3>
-<h4>To protect and preserve the environment by repurposing wasted paper material into reliable products that help improve peoples' lives.</h4>
-<h3>Our Values</h3>
-<ul>
-	<li><i>Passion.</i> We are driven to save the world from being clogged with wasted paper. Repurposing paper helps protect the world's trees.</li>
-	<li><i>Leadership.</i> We aim to be the best-in-class at what we do.</li>
-	<li><i>Integrity.</i> Our products will be of exceptional quality and their integrity will never be compromised.</li>
-	<li><i>Happiness.</i> Our goal is to make products from repurposed paper that people will enjoy and use in their everyday lives.</li>
-</ul>
-<h3>Saving the World</h3>
-<p>The United States is the world's top consumer of paper products in the world, with much of this used paper going into landfills as waste. Some of this paper is recycled, but many paper products cannot be recycled such as pizza boxes and coffee cups. We, the Papernet of Things, want to use these currently non-recyclable materials to create new products, thus reducing the amount of paper products that end up in landfills. This semester, we will be focusing on creating cell phone cases out of used pizza boxes.</p>
-<h3>The Team</h3>
-<table style="width:100%">
-	<tr>
-		<th>Tsatsa Battsengel</th>
-		<th>Angela Hu</th>
-		<th>Matt Riley</th>
-		<th>Doug Watts</th>
-		<th>Alyssa Woo</th>
-	</tr>
-	<tr>
-		<td><img src = "/static/photos/tsatsa.png" height = 100 width = 100></td>
-		<td><img src = "/static/photos/angela.png" height = 100 width = 100></td>
-		<td><img src = "/static/photos/matt.png" height = 100 width = 100></td>
-		<td><img src = "/static/photos/doug.png" height = 100 width = 100></td>
-		<td><img src = "/static/photos/alyssa.png" height = 100 width = 100></td>
-	</tr>
-</table>
+	<h1> The Papernet of Things: About</h1>
+	<img src = "/static/photos/PapernetOfThings.png" height = 200 width = 200><br>
+	<h3>Our Mission</h3>
+	<h4>To protect and preserve the environment by repurposing wasted paper material into reliable products that help improve peoples' lives.</h4>
+	<h3>Our Values</h3>
+	<ul>
+		<li><i>Passion.</i> We are driven to save the world from being clogged with wasted paper. Repurposing paper helps protect the world's trees.</li>
+		<li><i>Leadership.</i> We aim to be the best-in-class at what we do.</li>
+		<li><i>Integrity.</i> Our products will be of exceptional quality and their integrity will never be compromised.</li>
+		<li><i>Happiness.</i> Our goal is to make products from repurposed paper that people will enjoy and use in their everyday lives.</li>
+	</ul>
+	<h3>Saving the World</h3>
+	<p>The United States is the world's top consumer of paper products in the world, with much of this used paper going into landfills as waste. Some of this paper is recycled, but many paper products cannot be recycled such as pizza boxes and coffee cups. We, the Papernet of Things, want to use these currently non-recyclable materials to create new products, thus reducing the amount of paper products that end up in landfills. This semester, we will be focusing on creating cell phone cases out of used pizza boxes.</p>
+	<h3>The Team</h3>
+	<table style="width:100%">
+		<tr>
+			<th>Tsatsa Battsengel</th>
+			<th>Angela Hu</th>
+			<th>Matt Riley</th>
+			<th>Doug Watts</th>
+			<th>Alyssa Woo</th>
+		</tr>
+		<tr>
+			<td><img src = "/static/photos/tsatsa.png" height = 100 width = 100></td>
+			<td><img src = "/static/photos/angela.png" height = 100 width = 100></td>
+			<td><img src = "/static/photos/matt.png" height = 100 width = 100></td>
+			<td><img src = "/static/photos/doug.png" height = 100 width = 100></td>
+			<td><img src = "/static/photos/alyssa.png" height = 100 width = 100></td>
+		</tr>
+	</table>
+{% elif page == "market" %}
+	<h1> The Papernet of Things: Market Research </h1>
+	We administered a survey to gauge market interest in three products made from used pizza boxes. The survey was administered to:
+	<ul>
+		<li>Several student organizations at the University of Michigan</li>
+		<li>Chemical Engineering students at the University of Michigan</li>
+		<li>Chemical Engineering alumni from the University of Michigan</li>
+		<li>Various other family members and friends</li>
+	</ul>
+	Overall 248 people completed the survey. To preserve the anonymity of respondents, we did not collect information on gender, age, or location.
+	<br>
+	<h3>Market Interest in Recycling and Sustainability</h3>
+	<p>The first component of the survey gathered people's interest in recycling and sustainability. The purpose of this section was to gauge interest in sustainability with the assumption that those who incorporate sustainable actions into their day-to-day lives would be more likely to purchase products made from repurposed paper.</p>
+	<img src = "/static/photos/scale.png" width = 500> <br>
+	The average survey respondent said that on a scale of 1 to 10, 1 being least important and 10 being most important, recycling ranks at a 7.45 importance in their life.
+	<h3>Our First Product: Cell Phone Case!</h3>
+	In the survey, we proposed three potential products to be made from repurposed pizza boxes: a mug, a cell phone case, and a pencil case. The respondents were asked to rank the three proposed products in order of preference. <b>Two thirds of the survey respondents chose the cell phone case as the preferred product. As a result, this influenced our team to choose to develop a cell phone case as the preferred product.</b> The market research findings for the cell phone case section of the survey were used to identify consumer needs and design considerations.
+	<h3>Consumer Needs</h3>
+	From the market survey:
+	<ul>
+		<li>98% of respondents who use a cell phone case use it to protect their phones</li>
+		<li>44% of respondents who use a cell phone case use it to style their phones</li>
+	</ul>
+	Consumer needs were ranked by survey respondents and each attribute was categorized as "Essential", "Desirable", or "Useful", based on the consumer responses. The results are summarized in the table and chart below.
+	<h4>Consumer ranking for cell phone case attributes</h4>
+	<table>
+		<tr>
+			<th>Rank</th>
+			<th>Attribute</th>
+			<th>Category</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Strength/Durability</td>
+			<td>Essential</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Shape (thin or bulky preference)</td>
+			<td>Useful</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Aesthetics/Design</td>
+			<td>Desirable</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Cost</td>
+			<td>Useful</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Feel/Texture</td>
+			<td>Useful</td>
+		</tr>
+	</table>
+	<h3>Cell phone case attribute rankings from market survey</h3>
+	<img src = "/static/photos/consumer_needs.png" width = 500>
+{% elif page == "features" %}
+	<h1> Papernet of Things: Product Features</h1>
+{% elif page == "contact" %}
+	<h1> Papernet of Things: Contact Us</h1>
 {% endif %}
 <p>Copyright © Papernet of Things 2015 </p>
 {% endblock %}
