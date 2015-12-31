@@ -1,8 +1,42 @@
 {% extends "base.html" %}
 {% block content %}
+
+{% if page == "home" %}
 <h1> The Papernet of Things</h1>
 <img src = "/static/photos/PapernetOfThings.png"><br>
-<p>The United States is the world's top consumer of paper products in the world, with much of this used paper going into landfills as waste. Some of this paper is recycled, but many paper products cannot be recycled such as pizza boxes and coffee cups. We, the Papernet of Things, want to use these currently non-recyclable materials to create new products, thus reducing the amount of paper products that end up in landfills. This semester, we will be focusing on creating cell phone cases out of used pizza boxes.</p>
+The Papernet of Things repurposes used pizza boxes to create reusable iPhone cases! This is a Chemical Engineering senior design project for ChE 488/489: Product Design. The Papernet of Things is founded by Tsatsrel Battsengel, Angela Hu, Matthew Riley, Douglas Watts and Alyssa Woo.
 
+{% elif page == "about" %}
+<h1> The Papernet of Things: About</h1>
+<img src = "/static/photos/PapernetOfThings.png" height = 200 width = 200><br>
+<h3>Our Mission</h3>
+<h4>To protect and preserve the environment by repurposing wasted paper material into reliable products that help improve peoples' lives.</h4>
+<h3>Our Values</h3>
+<ul>
+	<li><i>Passion.</i> We are driven to save the world from being clogged with wasted paper. Repurposing paper helps protect the world's trees.</li>
+	<li><i>Leadership.</i> We aim to be the best-in-class at what we do.</li>
+	<li><i>Integrity.</i> Our products will be of exceptional quality and their integrity will never be compromised.</li>
+	<li><i>Happiness.</i> Our goal is to make products from repurposed paper that people will enjoy and use in their everyday lives.</li>
+</ul>
+<h3>Saving the World</h3>
+<p>The United States is the world's top consumer of paper products in the world, with much of this used paper going into landfills as waste. Some of this paper is recycled, but many paper products cannot be recycled such as pizza boxes and coffee cups. We, the Papernet of Things, want to use these currently non-recyclable materials to create new products, thus reducing the amount of paper products that end up in landfills. This semester, we will be focusing on creating cell phone cases out of used pizza boxes.</p>
+<h3>The Team</h3>
+<table style="width:100%">
+	<tr>
+		<th>Tsatsa Battsengel</th>
+		<th>Angela Hu</th>
+		<th>Matt Riley</th>
+		<th>Doug Watts</th>
+		<th>Alyssa Woo</th>
+	</tr>
+	<tr>
+		<td><img src = "/static/photos/tsatsa.png" height = 100 width = 100></td>
+		<td><img src = "/static/photos/angela.png" height = 100 width = 100></td>
+		<td><img src = "/static/photos/matt.png" height = 100 width = 100></td>
+		<td><img src = "/static/photos/doug.png" height = 100 width = 100></td>
+		<td><img src = "/static/photos/alyssa.png" height = 100 width = 100></td>
+	</tr>
+</table>
+{% endif %}
 <p>Copyright © Papernet of Things 2015 </p>
 {% endblock %}

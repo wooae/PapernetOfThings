@@ -7,6 +7,35 @@
 </head>
 <body>
 	<div class="center">
+		<table>
+			<tr>
+				<td>
+					<form action="/papernet">
+						<input type="submit" value = "Home">
+					</form>
+				</td>
+				<td>
+					<form action="/papernet/about">
+						<input type="submit" value = "About">
+					</form>
+				</td>
+				<td>
+					<form action="/papernet/market_research">
+						<input type="submit" value = "Market Research">
+					</form>
+				</td>
+				<td>	
+					<form action="/papernet/features">
+						<input type="submit" value = "Product Features">
+					</form>
+				</td>
+				<td>
+					<form action="/papernet/features">
+						<input type="submit" value = "Contact Us">
+					</form>
+				</td>
+			</tr>
+		</table>
 		{% block content %}{% endblock %}
 	</div>
 	<script type="text/javascript" src="/static/js/main.js"></script>
