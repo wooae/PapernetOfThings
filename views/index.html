@@ -100,6 +100,20 @@
 	<h1> Papernet of Things: Product Features</h1>
 {% elif page == "contact" %}
 	<h1> Papernet of Things: Contact Us</h1>
+	<p>Questions? Comments? Want to tell us how cool our product is? Send us a message!</p>
+	<form action = "mailto:wooae@umich.edu" method = "post" enctype = "text/plain">
+		Name:<br>
+		<input type = "text" name = "name" value = "Your name" size = 40><br>
+		Email address:<br>
+		<input type = "text" name = "email" value = "Your email address" size = 40><br>
+		Message:
+		<textarea name = "message" cols = 55 rows = 5></textarea><br><br>
+		<input type = "submit" value = "Send message!">
+		<input type = "reset" value = "Reset">
+	</form>
+	{% if message_sent %}
+		Your message has been sent! Thanks for writing to us! :)
+	{% endif %}
 {% endif %}
 <p>Copyright © Papernet of Things 2015 </p>
 {% endblock %}
